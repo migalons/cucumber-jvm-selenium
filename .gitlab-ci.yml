@@ -19,4 +19,4 @@ test:
     SELENIUM_HOST: selenium
   stage: test
   script:
-    - mvn test
+    - mvn test -Dselenium.host=selenium
