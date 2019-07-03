@@ -30,7 +30,7 @@ public class Config {
     @Value("${selenium.path:/wd/hub}")
     private String seleniumPath;
 
-    @Bean
+    @Bean(destroyMethod = "quit")
     public WebDriver webDriver() throws Exception {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setBrowserName(browserName);

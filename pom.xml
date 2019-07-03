@@ -19,7 +19,7 @@
         <profile>
             <id>prd</id>
             <properties>
-                <baseUrl>https://www.axa.es/</baseUrl>
+                <baseUrl>https://www.caixa.es/</baseUrl>
             </properties>
         </profile>
     </profiles>
@@ -104,6 +104,15 @@
                     <encoding>UTF-8</encoding>
                     <source>1.8</source>
                     <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M3</version>
+                <configuration>
+                    <parallel>methods</parallel>
+                    <threadCount>1</threadCount>
                 </configuration>
             </plugin>
         </plugins>

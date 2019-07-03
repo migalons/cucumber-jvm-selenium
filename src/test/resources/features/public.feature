@@ -7,5 +7,13 @@ Feature: Public site
     Then he gets an alert message
 
 
+  Scenario: Recover credentials
+    Given a user who wants to recover her credentials
+    When she introduces wrong credentials
+    Then she gets an alert message
+
+
+
+
 
 
